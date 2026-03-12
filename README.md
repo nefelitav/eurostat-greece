@@ -2,7 +2,10 @@
 
 A Flask + Matplotlib dashboard that pulls **live data from Eurostat** and renders it as a clean, sectioned web page.
 
-![Dashboard screenshot](img.png)
+![Dashboard screenshot 1](img.png)
+![Dashboard screenshot 2](img_1.png)
+![Dashboard screenshot 3](img_2.png)
+![Dashboard screenshot 4](img_3.png)
 
 ---
 
