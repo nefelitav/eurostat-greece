@@ -1,6 +1,6 @@
 # Greece Statistics Dashboard 🇬🇷
 
-A Flask + Matplotlib dashboard that pulls **live data from Eurostat** and renders it as a clean, sectioned web page.
+A Flask + Matplotlib dashboard that pulls **live data from Eurostat** and renders it as a web page.
 
 ![Dashboard screenshot 1](img.png)
 ![Dashboard screenshot 2](img_1.png)
@@ -33,19 +33,10 @@ A Flask + Matplotlib dashboard that pulls **live data from Eurostat** and render
 
 ---
 
-## Features
-
-- **6 grouped sections** — sticky nav bar jumps directly to Economy, Labour, Society, Environment, Crime, or Migration
-- **Skeleton loading** — page appears instantly; charts pop in as data arrives
-- **Delta badge on every chart** — shows the latest value and change vs the previous period
-- **Reusable helpers** in `data_fetch.py` (`_melt_annual`, `_melt_monthly`, `_geo_col`) — adding a new indicator is ~5 lines
-- **1-hour server-side cache** via Flask-Caching — Eurostat is queried once per server restart
-
----
 
 ## Run locally
 
-**First time — create a virtual environment and install dependencies:**
+**First time: create a virtual environment and install dependencies:**
 ```bash
 cd eurostat-greece
 python3 -m venv .venv
@@ -59,8 +50,6 @@ FLASK_DEBUG=0 python3 main.py
 ```
 
 Open **[http://127.0.0.1:5001](http://127.0.0.1:5001)** in your browser.
-
-> **Note:** port 5000 is reserved by macOS AirPlay Receiver — the app runs on **5001**.
 
 > Charts load in the background (~1–2 min on first run). After that everything is instant from the cache.
 
